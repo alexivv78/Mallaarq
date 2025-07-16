@@ -1,1 +1,54 @@
+body {
+  font-family: sans-serif;
+  background: #ffeaf1;
+  margin: 0;
+  padding: 2rem;
+}
 
+h1 {
+  text-align: center;
+  color: #e91e63;
+}
+
+.malla {
+  display: flex;
+  overflow-x: auto;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.semestre {
+  min-width: 200px;
+}
+
+.semestre h2 {
+  text-align: center;
+  color: #c2185b;
+}
+
+.ramo {
+  background: #f8bbd0;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+/* Colores por línea */
+.taller      { background: #f06292; }
+.urbanismo   { background: #80cbc4; }
+.historia    { background: #b39ddb; }
+.medios      { background: #f48fb1; }
+.tecnologia  { background: #ffab91; }
+.paisaje     { background: #aed581; }
+.optativo    { background: #fff176; }
+.ingles      { background: #e0e0e0; }
+.formacion   { background: #d7ccc8; }
+.practica    { background: #bcaaa4; }
+
+/* Activado (aprobado) */
+.ramo.activado {
+  opacity: 0.5;
+}
